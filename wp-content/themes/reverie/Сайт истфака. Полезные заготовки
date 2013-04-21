@@ -1,0 +1,27 @@
+<dl class="tabs four-up">
+  <dd class="active"><a href="#soc1"><i class="icon-users show-for-small"></i><span class="hide-for-small"><i class="icon-users"></i> Состав кафедры</span></a></dd>
+  <dd><a href="#soc2"><i class="icon-user show-for-small"></i><span class="hide-for-small"><i class="icon-user"></i> Бакалавриат</span></a></dd>
+  <dd><a href="#soc3"><i class="icon-graduation-cap show-for-small"></i><span class="hide-for-small"><i class="icon-graduation-cap"></i> Магистратура</span></a></dd>
+  <dd><a href="#soc4"><i class="icon-vcard show-for-small"></i><span class="hide-for-small"><i class="icon-vcard"></i> Контактная информация</span></a></dd>
+</dl>
+<ul class="tabs-content">
+  <li class="active" id="soc1Tab">
+
+<dl class="tabs pill">
+  <dd class="active"><a href="#soc_teachers1">Штатные</a></dd>
+  <dd><a href="#soc_teachers2">Совместители</a></dd>
+</dl>
+
+<ul class="tabs-content">
+  <li class="active" id="soc_teachers1Tab">This is simple tab 1s content. Pretty neat, huh?</li>
+  <li id="soc_teachers2Tab">This is simple tab 2s content. Now you see it!</li>
+</ul>
+  </li>
+  <li id="soc2Tab">
+
+  </li>
+  <li id="soc3Tab">
+
+  </li>
+  <li id="soc4Tab">This is simple tab 4s content.</li>
+</ul>
