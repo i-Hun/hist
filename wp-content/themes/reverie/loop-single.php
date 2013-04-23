@@ -6,10 +6,6 @@
 			<?php reverie_entry_meta(); ?>
 		</header>
 		<div class="entry-content">
-			<?php
-			 if  ( function_exists ("has_post_thumbnail") && has_post_thumbnail
-				() ) { the_post_thumbnail (array (300,300), array ("class" => "post_thumbnail_big")); } 
-			?>
 			<?php the_content(); ?>
 		</div>
 		<footer>
