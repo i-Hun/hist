@@ -12,11 +12,6 @@ Template Name: Main
 }
 </style>
 <div class="nine columns" >
-<!-- 	<div class="row">
-		<iframe src="/timeline.html" style="width: 100%; height: 400px; " scrolling="no" frameborder="no">
-		    Ваш браузер не поддерживает плавающие фреймы!
-		 </iframe>
-	</div> -->
 	<div class="row" id="nice_block_container">
 		<?php
 			$recent = new WP_Query(array( 'showposts' => '14', 'cat' => '-9' ));
@@ -24,7 +19,12 @@ Template Name: Main
 			global $more;
 			$more = 0;
 		?>
-		<article class="nice_block">
+		<article class="nice_block <?php $selected = $cfs->get('selected_post');
+			if ($selected) {
+			 	echo 'selected';
+			 } 
+			?>">
+
 			<i class="icon-search"></i>
 			<a href="<?php the_permalink() ?>">
 				<div class="pad"><h3><?php the_title(); ?></h3></div>
@@ -48,6 +48,14 @@ Template Name: Main
 	</div>
 </div>
 <div class="three columns">
+	<?php wp_list_bookmarks(array( 
+		'category_before'  => '<div id=%id class=%class>',
+		'category_after'   => '</div>',
+		'title_before'     => '<h3>',
+   		'title_after'      => '</h3>',
+   		'class'            => 'main_page_links',
+   		'show_description' => 1,
+	 ));?>
 	<div class="show-for-small left_widget">
 		<?php dynamic_sidebar( 'left_widget' ); ?>
 	</div>

@@ -299,12 +299,13 @@ $(".reload").click(function() {
 </script>
 
 
-	<script type="text/javascript" src="/wp-content/noise/jquery.noisy.js"></script>
+	<script type="text/javascript" src="/wp-content/noise/ancor_scroll.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.1/jquery.noisy.min.js"></script>
 	<script type="text/javascript">
-		$('#big_content').noisy({
+		$('#second_top').noisy({
 		    'intensity' : 1,
-		    'size' : 200,
-		    'opacity' : 0.08,
+		    'size' : 100,
+		    'opacity' : 0.05,
 		    'fallback' : '',
 		    'monochrome' : false
 		});

@@ -9,8 +9,9 @@ color:black;
 background: #ffcc00;
 color:black;
 }
+
 /*ФИКСЫ*/
-/*Фикс против серости футеров*/
+  /*Фикс против серости футеров*/
 ul, ol, dl {
     list-style-position: inside;
 }
@@ -38,6 +39,10 @@ ul.accordion > li .title {
 ul.accordion > li.active .content {
 border-left: none !important;
 border-right: none !important;
+}
+/*Дополнительные классы для меню*/
+.pad-left-10 {
+  padding-left: 10px;
 }
  /*Типографика */
 a { color: #1D87C7; text-decoration: none; line-height: inherit; }
@@ -1168,21 +1173,21 @@ color: #5F1B38;
 
 /*Главная страница*/
 /*Виждет rss, Последние записи посты, Виджет форума*/
-.nice_block, .rss_list, .recent, .vf_widget_discussions ul {
+.nice_block, .rss_list, .recent, .main_page_links ul, .nice_bl{
   background-color: #fff;
-  border: #EEE 1px solid!important;
+  /*border: #EEE 1px solid!important;*/
   border-radius: 2px;
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
 }
 
-.rss_list ul, .recent ul, .vf_widget_discussions ul {
+.rss_list ul, .recent ul, .main_page_links ul, .nice_bl ul{
   list-style: none;
   margin-bottom: 0;
 
 }
 
-.rss_list ul li, .recent li, .vf_widget_discussions ul li {
+.rss_list ul li, .recent li, .main_page_links li, .nice_bl li{
   padding:5px 10px;
   border-bottom: 1px solid #ddd;
         -webkit-transition-duration: 0.1s;
@@ -1192,7 +1197,7 @@ color: #5F1B38;
         transition-duration: 0.1s;
   color: #555;
 }
-.rss_list ul a:last-child li, .recent ul li:last-child, .vf_widget_discussions ul li:last-child {
+.rss_list ul a:last-child li, .recent ul li:last-child, .nice_bl li:last-child{
   border-bottom: none;
 }
 #nice_block_container {/* Предотвращение изменения колонок при уменьшении */
@@ -1421,3 +1426,13 @@ display: block;
   cursor: pointer;
 }
 
+/*Стиль прилепленных записей*/
+.pinned {
+  background-color: #FF5F79;
+
+}
+
+.pinned h3{
+  color: #fff;
+  
+}
