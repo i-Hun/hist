@@ -90,6 +90,12 @@ global $is_IE;
      
      wp_register_script( 'tooltips', get_template_directory_uri() . '/js/jquery.foundation.tooltips.js', array( 'jquery' ), false, true );
      wp_enqueue_script( 'tooltips' );
+
+     // wp_register_script( 'ancor_scroll', get_template_directory_uri() . '/js/custom/ancor_scroll.js', array( 'jquery' ), null, true );
+     // wp_enqueue_script( 'ancor_scroll' );
+
+     // wp_register_script( 'jquery.freetile', get_template_directory_uri() . '/js/custom/jquery.freetile.js', array( 'jquery' ), null, true );
+     // wp_enqueue_script( 'jquery.freetile' );
      
         
      if ($is_IE) {

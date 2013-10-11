@@ -71,7 +71,7 @@ Template Name: Main
 			animate: true,
 			elementDelay: 30
 		});
-  });
+	});
 </script>
 <script type="text/javascript" src="/wp-content/jquery.zoomooz.js"></script>
 <script type="text/javascript">

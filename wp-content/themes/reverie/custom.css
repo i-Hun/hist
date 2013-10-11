@@ -1251,17 +1251,7 @@ background: #212121; /* Old browsers */
 
   }
 }
-.nice_block .icon-search{
-  float:right; 
-  font-size:20pt; 
-  color:#999; 
-  margin:15px 10px 5px 5px;
-  cursor:pointer;
-  display: none;
-}
-.nice_block:hover .icon-search{
-display: block;
-}
+
 /*Отступы*/
 .pad{
   margin: 10px;
@@ -1427,12 +1417,36 @@ display: block;
 }
 
 /*Стиль прилепленных записей*/
-.pinned {
+.selected {
   background-color: #FF5F79;
 
 }
 
-.pinned h3{
+.selected h3{
   color: #fff;
+  
+}
+.selected footer{
+  color: #fff;
+  
+}
+
+.selected a{
+  color: #000;
+  
+}
+
+.selected p{
+  color: #fff;
+  
+}
+.selected p a{
+  color: #fff;
+  text-decoration: underline;
+  
+}
+
+.selected p a:hover{
+  background-color: rgba(0, 31, 255, 0.36);
   
 }
